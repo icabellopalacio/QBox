@@ -31,10 +31,14 @@ Scenario: Request a QBox Demo without some empty required fields
 	And some empty required fields : <Email>, <FirstName>, <SecondName>, <JobTitle>, <Industry>
 	When Complete Captcha 
 	And Submit button is clicked on 
-	Then a error message is displayed just below the empty required field: <Email>, <FirstName>, <SecondName>, <JobTitle>, <Industry>
-	Example: 
-	|Email|FirstName|SecondName|JobTitle|Industry|
-	|Empty|NonEmpty|NonEmpty|NonEmpty|NonEmpty|
+	Then a error message is displayed just below the empty required field
+	Examples: 
+	| Email    | FirstName | SecondName | JobTitle | Industry |
+	| Empty    | NonEmpty  | NonEmpty   | NonEmpty | NonEmpty |
+	| NonEmpty | Empty     | NonEmpty   | NonEmpty | NonEmpty |
+	| NonEmpty | NonEmpty  | Empty      | NonEmpty | NonEmpty |
+	| NonEmpty | NonEmpty  | NonEmpty   | Empty    | NonEmpty |
+	| NonEmpty | NonEmpty  | NonEmpty   | NonEmpty | Empty    |
 
 
 

@@ -82,16 +82,16 @@ namespace QBox.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Request a QBox Demo")]
+        [Xunit.SkippableFactAttribute(DisplayName="Request a QBox Demo with well configuration")]
         [Xunit.TraitAttribute("FeatureTitle", "QBoxRequestADemo")]
-        [Xunit.TraitAttribute("Description", "Request a QBox Demo")]
+        [Xunit.TraitAttribute("Description", "Request a QBox Demo with well configuration")]
         [Xunit.TraitAttribute("Category", "Functional")]
-        public virtual void RequestAQBoxDemo()
+        public virtual void RequestAQBoxDemoWithWellConfiguration()
         {
             string[] tagsOfScenario = new string[] {
                     "Functional"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request a QBox Demo", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request a QBox Demo with well configuration", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -119,28 +119,31 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("all the needed fields are well informed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 10
- testRunner.When("Submit button is clicked on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("Complete Captcha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then("the salesperson see a new lead in their CRM tool", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("Submit button is clicked on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
+ testRunner.Then("the salesperson see a new lead in their CRM tool", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+#line 13
  testRunner.And("the visitor receive a confirmation that the demo is received", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableTheoryAttribute(DisplayName="Inform a non coporate email")]
+        [Xunit.SkippableTheoryAttribute(DisplayName="Request a QBox Demo with a non coporate email")]
         [Xunit.TraitAttribute("FeatureTitle", "QBoxRequestADemo")]
-        [Xunit.TraitAttribute("Description", "Inform a non coporate email")]
-        [Xunit.TraitAttribute("Category", "NonFunctional")]
+        [Xunit.TraitAttribute("Description", "Request a QBox Demo with a non coporate email")]
+        [Xunit.TraitAttribute("Category", "Functional")]
         [Xunit.InlineDataAttribute("QBox@gmail.com", new string[0])]
         [Xunit.InlineDataAttribute("QBox@hotmai.com", new string[0])]
-        public virtual void InformANonCoporateEmail(string nonCorporateEmail, string[] exampleTags)
+        public virtual void RequestAQBoxDemoWithANonCoporateEmail(string nonCorporateEmail, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "NonFunctional"};
+                    "Functional"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -148,8 +151,8 @@ this.ScenarioInitialize(scenarioInfo);
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("NonCorporateEmail", nonCorporateEmail);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Inform a non coporate email", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 15
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request a QBox Demo with a non coporate email", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 16
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -169,17 +172,74 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
- testRunner.Given(string.Format("a non corporate Email: {0}", nonCorporateEmail), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 17
- testRunner.And("the rest of the needed fields are well informed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("the Qbox Demo request form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 18
- testRunner.When("Submit button is clicked on|", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And(string.Format("a non corporate Email: {0}", nonCorporateEmail), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 19
+ testRunner.And("the rest of the needed fields well informed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 20
+ testRunner.When("Complete Captcha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 21
+ testRunner.And("Submit button is clicked on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 22
  testRunner.Then("an error message is displayed just below the email field.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Request a QBox Demo without some empty required fields")]
+        [Xunit.TraitAttribute("FeatureTitle", "QBoxRequestADemo")]
+        [Xunit.TraitAttribute("Description", "Request a QBox Demo without some empty required fields")]
+        [Xunit.TraitAttribute("Category", "Functional")]
+        public virtual void RequestAQBoxDemoWithoutSomeEmptyRequiredFields()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "Functional"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Request a QBox Demo without some empty required fields", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 29
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 30
+ testRunner.Given("the Qbox Demo request form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 31
+ testRunner.And("some empty required fields : <Email>, <FirstName>, <SecondName>, <JobTitle>, <Ind" +
+                        "ustry>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 32
+ testRunner.When("Complete Captcha", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 33
+ testRunner.And("Submit button is clicked on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+ testRunner.Then("a error message is displayed just below the empty required field: <Email>, <First" +
+                        "Name>, <SecondName>, <JobTitle>, <Industry>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
