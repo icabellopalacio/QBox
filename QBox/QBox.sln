@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBox", "QBox.csproj", "{B365DBD8-BC78-426C-BF22-0F8314FA841A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B365DBD8-BC78-426C-BF22-0F8314FA841A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B365DBD8-BC78-426C-BF22-0F8314FA841A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B365DBD8-BC78-426C-BF22-0F8314FA841A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B365DBD8-BC78-426C-BF22-0F8314FA841A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7FC9D67-7DB1-4781-9620-C2BF3FCB0255}
+	EndGlobalSection
+EndGlobal
