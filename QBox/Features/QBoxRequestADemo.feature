@@ -40,6 +40,19 @@ Scenario: Request a QBox Demo without some empty required fields
 	| NonEmpty | NonEmpty  | NonEmpty   | Empty    | NonEmpty |
 	| NonEmpty | NonEmpty  | NonEmpty   | NonEmpty | Empty    |
 
+@NonFunctional
+Scenario: Request a QBox Demo testing the max-lenght of the text fields
+	Given the Qbox Demo request form 
+	And a text with minimun number of characters to exceed the field maxlenght: <FieldMaxLenght>
+	Examples: 
+	| FieldMaxLenght |
+	| CompanyEmail   |
+	| FirstName      |
+	| LastName       |
+	| JobTitle       |
+	| Industry       |
+
+
 
 
 	
