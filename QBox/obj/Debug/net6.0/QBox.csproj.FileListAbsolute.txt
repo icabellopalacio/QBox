@@ -113,3 +113,12 @@ C:\Projects\QBox\QBox\obj\Debug\net6.0\refint\QBox.dll
 C:\Projects\QBox\QBox\obj\Debug\net6.0\QBox.pdb
 C:\Projects\QBox\QBox\obj\Debug\net6.0\QBox.genruntimeconfig.cache
 C:\Projects\QBox\QBox\obj\Debug\net6.0\ref\QBox.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Boa.Constrictor.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Boa.Constrictor.RestSharp.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Boa.Constrictor.Screenplay.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Boa.Constrictor.Selenium.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Microsoft.Bcl.HashCode.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\RestSharp.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\WebDriver.Support.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\WebDriver.dll
+C:\Projects\QBox\QBox\bin\Debug\net6.0\Utils\WebDrivers\chromedriver.exe
